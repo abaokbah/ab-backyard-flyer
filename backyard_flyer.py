@@ -100,6 +100,8 @@ class BackyardFlyer(Drone):
         2. Transition to the LANDING state
         """
         print("landing transition")
+        self.land()
+        self.flight_state = States.LANDING
 
     def disarming_transition(self):
         """TODO: Fill out this method
@@ -108,6 +110,8 @@ class BackyardFlyer(Drone):
         2. Transition to the DISARMING state
         """
         print("disarm transition")
+        self.disarm()
+        self.flight_state = States.DISARMING
 
     def manual_transition(self):
         """This method is provided
