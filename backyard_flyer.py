@@ -102,6 +102,7 @@ class BackyardFlyer(Drone):
         print("landing transition")
         self.land()
         self.flight_state = States.LANDING
+        print("some text from work laptop")
 
     def disarming_transition(self):
         """TODO: Fill out this method
